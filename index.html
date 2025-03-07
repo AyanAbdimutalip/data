@@ -81,6 +81,13 @@
             right: 2px;
         }
 
+        .imagePro{
+            width: 120px ;
+            height: 120px;
+            border-radius: 999px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body> 
@@ -89,6 +96,7 @@
     <form id="infoForm">
 
         <h1>Жеке ақпарат</h1>
+        <input class="imagePro" type="file">
         <input type="text" id="fullName" placeholder="Аты-жөні" required>
         <div class="whatsApp">
             <input type="tel" id="phoneNumber" placeholder="Телефон номер" required>
@@ -111,7 +119,7 @@
     <script>
         function sendToTelegram() {
             const botToken = "8144753593:AAHB8vR7RkZrXtcGhwD6qj6j5UlAxihXHYE";
-            const chatId = "855499967";
+            const chatId = "6768870909";
 
             // ID есептеу
             let userId = localStorage.getItem("userId");
